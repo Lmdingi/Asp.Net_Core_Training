@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("receive_username_and_password_via_POST_request")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89edc280639b92b7547b184ea5b26b563cd59de2")]
 [assembly: System.Reflection.AssemblyProductAttribute("receive_username_and_password_via_POST_request")]
 [assembly: System.Reflection.AssemblyTitleAttribute("receive_username_and_password_via_POST_request")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
