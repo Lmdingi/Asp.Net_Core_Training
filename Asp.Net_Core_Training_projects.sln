@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "receive_username_and_password_via_POST_request", "receive_username_and_password_via_POST_request\receive_username_and_password_via_POST_request.csproj", "{352C3749-68F8-48B4-936C-906BE229AEF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "routing", "routing\routing.csproj", "{39786987-CC14-4DC3-ADD3-3BC11B531F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFiles", "StaticFiles\StaticFiles.csproj", "{44FD711D-76C3-4F9A-AAB5-F393C0CBF3F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{352C3749-68F8-48B4-936C-906BE229AEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{352C3749-68F8-48B4-936C-906BE229AEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{352C3749-68F8-48B4-936C-906BE229AEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39786987-CC14-4DC3-ADD3-3BC11B531F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39786987-CC14-4DC3-ADD3-3BC11B531F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39786987-CC14-4DC3-ADD3-3BC11B531F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39786987-CC14-4DC3-ADD3-3BC11B531F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44FD711D-76C3-4F9A-AAB5-F393C0CBF3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44FD711D-76C3-4F9A-AAB5-F393C0CBF3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44FD711D-76C3-4F9A-AAB5-F393C0CBF3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44FD711D-76C3-4F9A-AAB5-F393C0CBF3F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
