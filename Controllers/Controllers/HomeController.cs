@@ -59,45 +59,36 @@ namespace Controllers.Controllers
             return File(bytes, "application/pdf");
         }
 
-        [Route("bookstore")]
-        public IActionResult BookIndex()
+        [Route("bookstore/{bookId?}/{isLoggedIn}")]
+        public IActionResult BookIndex(int? bookId, [FromRoute]bool? isLoggedIn, 
+        Book book)
         {
 
-            if (!Request.Query.ContainsKey("bookid"))
+            if (bookId.HasValue == false )
             {
-                return BadRequest("Book id is not supplied");
+                return BadRequest("Book id is not supplied or maybe empty");
             }
 
-            if (string.IsNullOrEmpty(Convert.ToString(Request.Query["bookid"])))
+            if (bookId <= 0)
             {
-
-                return BadRequest("Book id can't be null or empty");
-            }
-
-            int bookid = Convert.ToInt16(ControllerContext.HttpContext.Request.Query["bookid"]);
-            int bookid2 = Convert.ToInt16(Request.Query["bookid"]);
-
-            if (bookid <= 0)
-            {
-
                 return BadRequest("Book id can't be less than zero");
             }
 
-            if (bookid > 1000)
+            if (bookId > 1000)
             {
 
                 return NotFound("Book id can't be greater than 1000");
             }
 
-            if (Convert.ToBoolean(Request.Query["isloggedin"]) == false)
+            if (isLoggedIn == false)
             {
-
                 return Unauthorized("User must be authenticated");
             }
 
             // return File("Resume.pdf", "application/pdf");
             // return RedirectToAction("Books", "Store", new { id = bookid });
-            return RedirectToActionPermanent("Books", "Store", new { id = bookid, id2 = bookid2 });
+            // return RedirectToActionPermanent("Books", "Store", new { id = bookid, id2 = bookid2 });
+            return Content($"bookId: {bookId} <==> isLoggedIn: {isLoggedIn} <==> book: {book}");
         }
 
     }
